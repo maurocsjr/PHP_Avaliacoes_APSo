@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="38a94721-f66a-4ae5-a525-fd6eb314d7ca" name="APaC - Server" url="http://educacao.apac.org.br">
+        <fileTransfer accessType="SFTP" host="10.105.11.29" port="22" sshConfigId="89adf4c7-85b1-42c5-b10c-c66a88651f25" sshConfig="administrator@10.105.11.29:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseRsync="true" isUseSudo="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

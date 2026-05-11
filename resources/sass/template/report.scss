@@ -1,0 +1,93 @@
+@page {
+    margin: 1.54cm 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    padding-top: 20pt;
+    width: 21cm;
+    min-height: 29cm;
+}
+
+.titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 20pt;
+    padding-bottom: 3pt;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 10pt;
+}
+
+#avaliacao {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+#avaliacao td,
+#avaliacao th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 2pt;
+}
+
+#avaliacao tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#avaliacao tr:hover {
+    background-color: #ddd;
+}
+
+#avaliacao th {
+    text-align: center;
+    background-color: #003b6f;
+    color: white;
+}
+
+#avaliacao tfoot {
+    background-color: #003b6f;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    width: 1.5cm;
+    height: 1.5cm;
+}
+
+.numero-avaliacao {
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    font-weight: bold;
+}
+
+.texto-table {
+    margin-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.linha-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rowspan {
+    background-color: #003b6f;
+    color: white;
+}
