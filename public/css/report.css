@@ -1,56 +1,57 @@
 @page {
     margin: 1.54cm 0;
 }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
-  padding-top: 20pt;
-  width: 21cm;
-  min-height: 29cm;
+    padding-top: 20pt;
+    width: 21cm;
+    min-height: 29cm;
 }
 
 .titulo {
-  text-align: center;
-  font-weight: bold;
-  font-size: 14pt;
-  padding-top: 20pt;
-  padding-bottom: 3pt;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 20pt;
+    padding-bottom: 3pt;
 }
 
 .subtitle {
-  text-align: center;
-  font-size: 10pt;
+    text-align: center;
+    font-size: 10pt;
 }
 
 #avaliacao {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  margin-right: 10px;
-  padding-left: 10px;
-  font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
 }
 
 #avaliacao td,
 #avaliacao th {
-  text-align: center;
-  border: 1px solid #ddd;
-  padding: 2pt;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 2pt;
 }
 
 #avaliacao td.item-html {
-  text-align: left;
-  vertical-align: top;
+    text-align: left;
+    vertical-align: top;
 }
 
 #avaliacao td.item-html p {
-  margin: 0 0 6pt;
+    margin: 0 0 6pt;
 }
 
 #avaliacao td.item-html p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 #avaliacao td.item-html h1,
@@ -59,79 +60,83 @@ body {
 #avaliacao td.item-html h4,
 #avaliacao td.item-html h5,
 #avaliacao td.item-html h6 {
-  margin: 6pt 0 4pt;
-  line-height: 1.25;
+    margin: 6pt 0 4pt;
+    line-height: 1.25;
 }
 
 #avaliacao td.item-html ul,
 #avaliacao td.item-html ol {
-  margin: 4pt 0 6pt 16pt;
-  padding-left: 10pt;
+    margin: 4pt 0 6pt 16pt;
+    padding-left: 10pt;
 }
 
 #avaliacao td.item-html li {
-  margin: 1pt 0;
+    margin: 1pt 0;
 }
 
 #avaliacao td.item-html .ql-align-center {
-  text-align: center;
+    text-align: center;
 }
 
 #avaliacao td.item-html .ql-align-right {
-  text-align: right;
+    text-align: right;
 }
 
 #avaliacao td.item-html .ql-align-justify {
-  text-align: justify;
+    text-align: justify;
 }
 
 #avaliacao tr:nth-child(even) {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 #avaliacao tr:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 #avaliacao th {
-  text-align: center;
-  background-color: #003b6f;
-  color: white;
+    text-align: center;
+    background-color: #003b6f;
+    color: white;
 }
 
 #avaliacao tfoot {
-  background-color: #003b6f;
-  color: white;
+    background-color: #003b6f;
+    color: white;
 }
 
 .logo {
-  position: absolute;
-  left: 50px;
-  top: 20px;
-  width: 1.5cm;
-  height: 1.5cm;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    width: 1.5cm;
+    height: 1.5cm;
 }
 
 .numero-avaliacao {
-  position: absolute;
-  right: 60px;
-  top: 40px;
-  font-weight: bold;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    font-weight: bold;
 }
 
 .texto-table {
-  margin-left: 20px;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  font-weight: bold;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-weight: bold;
 }
 
 .linha-content {
-  margin-left: 20px;
-  margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .rowspan {
-  background-color: #003b6f;
-  color: white;
+    background-color: #003b6f;
+    color: white;
+}
+
+#avaliacao {
+    width: 20.5cm;
 }

@@ -20,6 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('get-avaliacoes/{id}', [ReportController::class, 'getAvaliacao']);
+Route::get('get-avaliacoes/{id}/secao/{idSecao}', [ReportController::class, 'getAvaliacaoPorSecao']);
 
 Route::get('get-avaliacoes-ranking', function (Request $request, ReportController $reportController) {
     $campos = $request->query('campos');

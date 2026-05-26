@@ -8,6 +8,8 @@ use App\Models\AvaliacaoRanking;
 use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 use Illuminate\Support\Facades\DB;
 
+@ini_set('memory_limit', '512M');
+
 class ReportController extends Controller
 {
     public function getAvaliacao($id)
@@ -26,6 +28,48 @@ class ReportController extends Controller
                 ]
             );
             $nameFile = $itensAvaliacao[0]->Escola . '_' . date("dmY");
+            return $pdf->setPaper('a4')->stream($nameFile . '.pdf');
+        }
+    }
+
+    public function getAvaliacaoPorSecao($id, $idSecao)
+    {
+        if ($id !== null && $idSecao !== null) {
+            $itensAvaliacao = Avaliacao::where('Id_Avaliacao', '=', $id)
+                ->where('Id_Secao', '=', $idSecao)
+                ->orderBy('Id_Secao')
+                ->orderBy('Posicao')
+                ->get();
+
+            if ($itensAvaliacao->isEmpty()) {
+                return response()->json([
+                    'message' => 'Nenhum dado encontrado para a avaliacao e secao informadas.'
+                ], 404);
+            }
+
+            $secoesAvaliacao = AvaliacaoNotas::selectRaw('*, ROUND((Nota_Final / Soma_Peso_Item), 2) AS Porcentagem')
+                ->where('Id_Avaliacao', '=', $id)
+                ->where('Id_Secao', '=', $idSecao)
+                ->orderBy('Id_Secao')
+                ->get();
+
+            $feedbacksAll = collect($this->getAvaliacaoFeedbacks($id))
+                ->filter(function ($feedback) use ($idSecao) {
+                    return (int) ($feedback['idSecao'] ?? 0) === (int) $idSecao;
+                })
+                ->values()
+                ->toArray();
+
+            $pdf = FacadePdf::loadView('avaliacaoReport',
+                [
+                    'itensAvaliacao' => $itensAvaliacao,
+                    'secoesAvaliacao' => $secoesAvaliacao,
+                    'feedbacksAll' => $feedbacksAll,
+                    'id' => $id
+                ]
+            );
+
+            $nameFile = $itensAvaliacao[0]->Escola . '_' . date("dmY") . '_secao_' . $idSecao;
             return $pdf->setPaper('a4')->stream($nameFile . '.pdf');
         }
     }

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="38a94721-f66a-4ae5-a525-fd6eb314d7ca" name="APaC - Server" url="http://educacao.apac.org.br">
-        <fileTransfer accessType="SFTP" host="10.105.11.29" port="22" sshConfigId="89adf4c7-85b1-42c5-b10c-c66a88651f25" sshConfig="administrator@10.105.11.29:22 password">
+      <webServer id="7575e747-2cc7-499e-937f-5ca451148242" name="APSo - Server" url="http://educacao.apso.org.br/">
+        <fileTransfer rootFolder="/home/suporte" accessType="SFTP" host="10.112.111.34" port="22" sshConfigId="9f3b4cd4-c1dd-406c-b42c-f59139cc0a54" sshConfig="suporte@10.112.111.34:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseRsync="true" isUseSudo="true" />
           </advancedOptions>

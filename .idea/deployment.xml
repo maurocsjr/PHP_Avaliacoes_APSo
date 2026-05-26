@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="APaC - Server" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="APSo - Server" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="APaC - Server">
+      <paths name="APSo - Server">
         <serverdata>
           <mappings>
-            <mapping deploy="/var/www/html/avaliacao-report" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/var/www/html/avaliacao-php" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/storage" />
+            <excludedPath local="true" path="$PROJECT_DIR$/AGENTS.md" />
           </excludedPaths>
         </serverdata>
       </paths>
